@@ -1,0 +1,16 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [id]
+      ,[nombreServicio]
+      ,[cantRegistros]
+      ,[fechaConsulta]
+      ,[nombreArchivo]
+      ,[usuario]
+      ,[cantRegistrosContRta]
+      ,[cantRegistrosSinRta]
+      ,[novedad]
+      ,[tokenInicial]
+      ,[estado]
+      ,[fechaFin]
+      ,[asunto]
+  FROM [dbo].[LogConsultasRunt]
+    ORDER BY id desc
